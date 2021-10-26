@@ -91,7 +91,8 @@ public class CityControllerIT {
 		
 		ResultActions result =
 				mockMvc.perform(delete("/cities/{id}", dependentId));
-				
+		
+		result.andReturn().getResolvedException();
 		result.andExpect(status().isBadRequest());
 	}
 }
