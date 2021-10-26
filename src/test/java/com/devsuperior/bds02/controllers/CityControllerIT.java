@@ -44,7 +44,7 @@ public class CityControllerIT {
 	}
 	
 	@Test
-	public void insertShouldInsertResource() throws Exception {
+	public void insertShouldInsertResource() throws Exception {// ok
 
 		CityDTO dto = new CityDTO(null, "Recife");
 		String jsonBody = objectMapper.writeValueAsString(dto);
